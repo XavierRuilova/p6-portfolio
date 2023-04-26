@@ -41,7 +41,7 @@ const Experience = () => {
                         </tr>
                         <tr>
                             <td>
-                                <h4>Programador FS</h4>
+                                <h4>Exper</h4>
                                 <p>Udemy Cursos</p>
                             </td>
                         </tr>
@@ -60,7 +60,7 @@ const Experience = () => {
                         </tr>
                         <tr>
                             <td>
-                                <h4>Mercado Libre</h4>
+                                <h4>titulo</h4>
                                 <p>Programador Junior</p>
                                
                             </td>
