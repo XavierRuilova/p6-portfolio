@@ -1,10 +1,17 @@
 import React from 'react'
 import './experience.css'
 import BadgeLanding from '../badges/BadgeLanding'
+import Cards from '../cards/Cards'
 
 
 
 const Experience = () => {
+    const pages = [
+        {title:'CRUD con localstorage', url:'https://xavierruilova.github.io/crudruilova/', imgurl:'https://i.ibb.co/7Qnnn2Q/crud.png'},
+        {title:'Dashboard con API', url:'https://xavierruilova.github.io/proyecto3g7/', imgurl:'https://i.ibb.co/BcVWC5p/dashboard.png'},
+        {title:'App para restaurante', url:'https://main--clever-lolly-752102.netlify.app/', imgurl:'https://i.ibb.co/71QNm8t/ecommerce.png'},
+        {title:'App e-commerce', url:'https://mi-tienda-online.onrender.com/', imgurl:'https://i.ibb.co/L6CcNgL/ecommerce.png'},
+    ]
   return (
     <section className="experience" id="experience">
         <div className="content-section	">
@@ -12,76 +19,14 @@ const Experience = () => {
             <h3>Mis logros y experiencia</h3>
             <div className="info">
                 <div className="column">
-                    <span className="title">Insignias</span>
-                <BadgeLanding/>
-                    <table>
-                        <tr>
-                            <td className="period">
-                                <h3>Landing de venta</h3>
-                            </td>
-                            <td rowspan="2" className="description">
-                                
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div><BadgeLanding/></div>
-                            
-                            </td>
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                            <td className="period">
-                                <h3>2010 - 2015</h3>
-                            </td>
-                            <td rowspan="2" className="description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at soluta quos explicabo dolor recusandae, dolorum.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4>Exper</h4>
-                                <p>Udemy Cursos</p>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div className="column">
                     <span className="title">Proyectos</span>
-                    <table>
-                        <tr>
-                            <td className="period">
-                                <h3>3 Años</h3>
-                            </td>
-                            <td rowspan="2" className="description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at soluta quos explicabo dolor recusandae, dolorum.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4>titulo</h4>
-                                <p>Programador Junior</p>
-                               
-                            </td>
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                            <td className="period">
-                                <h3>2 Años</h3>
-                            </td>
-                            <td rowspan="2" className="description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at soluta quos explicabo dolor recusandae, dolorum.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4>Software Inc.</h4>
-                                <p>Diseñadr Principal</p>
-                            </td>
-                        </tr>
-                    </table>
+                    <div className='cards'>
+                    {pages.map((e, i)=>{
+                        return <Cards key={i} url={e.url} imgurl={e.imgurl} titl={e.title}/>
+
+                    })}
+                    </div>
+    
                 </div>
             </div>
         </div>

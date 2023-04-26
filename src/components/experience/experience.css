@@ -19,7 +19,8 @@
     margin-top: 30px;
 }
 .experience .content-section .info .column{
-    width: 45%;
+    width: 100%;
+
 }
 .experience .content-section .info .column .title{
     display: inline-block;
@@ -29,11 +30,15 @@
     padding: 10px;
 
 }
-.experience .content-section .info .column table{
+.experience .content-section .info .column .title .cards{
+    flex-wrap: wrap;
+
+}
+/* .experience .content-section .info .column table{
     margin-top: 30px;
     border-collapse: collapse;
-}
-.experience .content-section .info .column table .datos{
+} */
+/* .experience .content-section .info .column table .datos{
     width: 40%;
     border-bottom: 1px solid #bab9b9;
 }
@@ -46,7 +51,7 @@
 }
 .experience .content-section .info .column table p{
     font-size: 14px;
-}
+} */
 
 .experience .content-section .info .column table .descripcion{
     border-left: 1px solid #bab9b9;
@@ -64,10 +69,6 @@
     .experience .content-section .info .column .title{
         display: block;
         text-align: center;
-    }
-    .experience .content-section .info .column table{
-        margin-top: 10px;
-        margin-bottom: 30px;
     }
 
 
