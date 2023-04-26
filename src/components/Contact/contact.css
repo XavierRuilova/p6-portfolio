@@ -1,0 +1,33 @@
+.contact{
+    background-color: #202020;
+    padding: 140px 0 100px 0;
+    color: #e6e6e6;
+    text-align: center;
+}
+.contact .content-section{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contact .content-section h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.contact .content-section .row{
+    display: flex;
+    justify-content: space-around;
+}
+.contact .content-section .row .column{
+    margin-top: 50px;
+}
+.contact .content-section .row .column h2{
+    color: #940253;
+}
+
+@media screen and (max-width:800px){
+
+    .contact .content-section .row{
+        display: block;
+    }
+
+}

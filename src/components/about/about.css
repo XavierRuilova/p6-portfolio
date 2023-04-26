@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
+
+.aboutme{
+    background-color: #e6e6e6;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.aboutme .content-section{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.section-title{
+    font-family: "Yellowtail";
+    font-size: 1.5rem;
+}
+.aboutme .content-section h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+.aboutme .content-section h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.aboutme .content-section .special{
+    color: #940253;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.aboutme .content-section p{
+    max-width: 700px;
+    margin: auto;
+    color: #362e2e;
+}
+.aboutme .content-section .row{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.aboutme .content-section .row .column{
+    width: 30%;
+}
+
+.aboutme .content-section .row .column span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+@media screen and (max-width:800px){
+    .aboutme .content-section .row{
+        display: block;
+    }
+    .aboutme .content-section .row .column{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+
+}

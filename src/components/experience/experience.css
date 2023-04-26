@@ -1,0 +1,74 @@
+.experience{
+    background-color: #e6e6e6;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.experience .content-section{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.experience .content-section h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.experience .content-section .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.experience .content-section .info .column{
+    width: 45%;
+}
+.experience .content-section .info .column .title{
+    display: inline-block;
+    color: #940253;
+    font-weight: bold;
+    border: 2px solid #940253;
+    padding: 10px;
+
+}
+.experience .content-section .info .column table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.experience .content-section .info .column table .datos{
+    width: 40%;
+    border-bottom: 1px solid #bab9b9;
+}
+.experience .content-section .info .column table h4{
+    margin-top: 10px;
+}
+.experience .content-section .info .column table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.experience .content-section .info .column table p{
+    font-size: 14px;
+}
+
+.experience .content-section .info .column table .descripcion{
+    border-left: 1px solid #bab9b9;
+    padding-left: 20px;
+}
+@media screen and (max-width:800px){
+
+    .experience .content-section .info{
+        display: block;
+    }
+    .experience .content-section .info .column{
+        width: 90%;
+        margin: auto;
+    }
+    .experience .content-section .info .column .title{
+        display: block;
+        text-align: center;
+    }
+    .experience .content-section .info .column table{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+
+}
