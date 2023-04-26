@@ -1,7 +1,14 @@
 import React from 'react'
 import './skills.css'
+import ProgressBar from '../progress/ProgressBar'
 
 const Skills = () => {
+	const progress = {
+		htmlcss: {title:'HTML/CSS', value:'30%'}, 
+		javascript: {title:'JAVASCRIPT', value:'20%'},
+		mongodb: {title:'MONGODB', value:'40%'},
+		react: {title:'REACT', value:'40%'},
+	}
   return (
     <section className="skills" id="skills">
 	<div className="content-section">
@@ -11,38 +18,32 @@ const Skills = () => {
 		<div className="row">
 			<div className="column">
 				<span>
-					HTML/CSS
+					{progress.htmlcss.title}
 				</span>
-				<div className="cont-bar">
-					<div className="bar" id="html">
-						{/* 17 barras */}
-					</div>
-					<span>98%</span>
-				</div>
+				<ProgressBar value={progress.htmlcss.value}/>
 			</div>
 
 			<div className="column">
 				<span>
-					JAVASCRIPT
+				{progress.javascript.title}
 				</span>
-				<div className="cont-bar">
-					<div className="bar" id="html">
-						{/* 17 barras */}
-					</div>
-					<span>70%</span>
-				</div>
+				<ProgressBar value={progress.javascript.value}/>
 			</div>
 
 			<div className="column">
 				<span>
-					HTML/CSS
+				{progress.react.title}
 				</span>
-				<div className="cont-bar">
-					<div className="bar" id="html">
-						{/* 17 barras */}
-					</div>
-					<span>98%</span>
-				</div>
+				<ProgressBar value={progress.react.value}/>
+
+			</div>
+
+			<div className="column">
+				<span>
+				{progress.mongodb.title}
+				</span>
+				<ProgressBar value={progress.mongodb.value}/>
+
 			</div>
 		</div>
 	</div>
